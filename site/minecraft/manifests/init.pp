@@ -10,7 +10,7 @@ class minecraft {
     ensure => present,
   }
   file { '/opt/minecraft/eula.txt':
-    ensure  => present,
+    ensure  => file,
     content => 'eula=true',
   }
   file { '/etc/systemd/sytem/minecraft.service':
